@@ -9,7 +9,7 @@ const car = carMakers[0];
 const myCar = carMakers.pop();
 
 // Prevent incompatible values
-carMakers.push(100);
+//carMakers.push(100);
 
 // Help with map
 carMakers.map((car: string): string => {
@@ -17,4 +17,6 @@ carMakers.map((car: string): string => {
 });
 
 // Flexible types
-const importaDates = [new Date(), ''];
+const importaDates: (Date | string)[] = [new Date(), ''];
+importaDates.push('dsf');
+importaDates.push(new Date());
